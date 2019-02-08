@@ -7,6 +7,7 @@ const readline = require('readline').createInterface({
   
 let count=0;
 let sec;
+let score=0;
 
 sec = Math.floor(Math.random()*200);
 
