@@ -1,29 +1,33 @@
+// A simple "Guess The Number" game made using C++
+
 #include<bits/stdc++.h>
+
 using namespace std;
 
-
-int main(){
-    int num,sec;
-    sec = rand()%200 +1;
-    string cond;
-    cout << "I'm thinking of a number! Try to guess the number I'm thinking of: ";
-    cin >> num;
-    while(num!=sec) {
-        if(sec>num) {
-            cout << "Too low! Guess again: ";
-            cin >> num;
+int main()
+{
+    srand(time(0));
+    int guess, number, choice;
+    number = (rand() % 200) + 1;
+    cout << "\nI am thinking of a number! Try to guess that number (Hint: The number's between 1 and 200): ";
+    cin >> guess;
+    while(guess != number)
+    {
+        if(guess < number)
+        {
+            cout << "\n\nToo low! Guess again: ";
+            cin >> guess;
         }
-        else if(sec<num) {
-            cout << "Too high! Guess again: ";
-            cin >> num;
+        else if(guess > number)
+        {
+            cout << "\n\nToo high! Guess again: ";
+            cin >> guess;
         }
     }
-    cout << "That's it! Would you like to play again? (yes/no): ";
-    cin >> cond;
-    if((cond == "yes") || (cond == "Yes") || (cond == "YES") ) {
+    cout << "\n\nThat's it! You have guessed the number correctly :)\n";
+    cout << "\n\nWould you like to play again? (Enter 1 for 'Yes'): ";
+    cin >> choice;
+    if(choice  == 1)
         return main();
-    }
-    else {
-      return 0;
-    }
+    return 0;
 }
