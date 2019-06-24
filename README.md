@@ -17,16 +17,14 @@ Thanks for playing!
 
 ```
 
-##Examples
+## Examples
 
 <1> C++
 
-![game.cpp screenshot](C:\Users\HP\Desktop\Aman Raj\Guess-the-number\screenshots "Screenshot of game.cpp")
+![game.cpp screenshot](https://user-images.githubusercontent.com/50922445/60005526-52c8f400-968c-11e9-8725-8fbd0c3b332b.PNG "Screenshot of game.cpp")
 
-##Contribution
+## Contribution
 
 You may contribute to this repository by adding an implementation of this game in any programming language which has not
 been used so far in this repository. You may even make the already available implementations efficient by modifying them.
 Your changes will be approved and added to the repository, if we find them apt.
-
---------------------------------THANK YOU ----------------------------------
